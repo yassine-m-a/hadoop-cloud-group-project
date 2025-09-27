@@ -3,11 +3,10 @@ Description=HBase Master
 After=network.target zookeeper.service
 
 [Service]
-Type=forking
 User=ubuntu
-ExecStart=/opt/hbase/bin/hbase-daemon.sh start master
-ExecStop=/opt/hbase/bin/hbase-daemon.sh stop master
-Restart=on-failure
+ExecStart=/opt/hbase/bin/hbase start master
+Restart=always
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
