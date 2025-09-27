@@ -5,6 +5,7 @@ After=network.target
 [Service]
 User=ubuntu
 Group=ubuntu
+Type=forking
 ExecStartPre=/opt/hadoop/sbin/start-dfs.sh
 ExecStart=/opt/hadoop/sbin/start-yarn.sh
 ExecStop=/opt/hadoop/sbin/stop-yarn.sh

@@ -4,7 +4,8 @@ After=network.target zookeeper.service
 
 [Service]
 User=ubuntu
-ExecStart=/opt/hbase/bin/hbase start master
+ExecStart=/opt/hbase/bin/hbase master start
+ExecStop=/opt/hbase/bin/hbase master stop
 Restart=always
 RestartSec=5
 
