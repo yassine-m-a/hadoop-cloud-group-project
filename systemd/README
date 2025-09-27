@@ -1,0 +1,20 @@
+# START SERVICES
+
+✅ tp-hadoop-22 (Master)
+sudo systemctl start hadoop
+sudo systemctl start hbase-master
+sudo systemctl start hbase-regionserver
+sudo systemctl start zookeeper
+
+✅ tp-hadoop-9 (Second HMaster + RegionServer)
+sudo systemctl start hbase-master
+sudo systemctl start hbase-regionserver
+sudo systemctl start zookeeper
+
+✅ tp-hadoop-30 (RegionServer)
+sudo systemctl start hbase-regionserver
+sudo systemctl start zookeeper
+
+✅ tp-hadoop-31 (RegionServer)
+sudo systemctl start hbase-regionserver
+sudo systemctl start zookeeper
