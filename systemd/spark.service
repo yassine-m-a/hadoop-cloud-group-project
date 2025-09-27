@@ -1,0 +1,14 @@
+[Unit]
+Description=Spark (Master +  Worker)
+After=network.target hadoop.service
+
+[Service]
+User=ubuntu
+Group=ubuntu
+Type=forking
+ExecStart=/opt/spark/sbin/start-all.sh
+ExecStop=/opt/spark/sbin/stop-all.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

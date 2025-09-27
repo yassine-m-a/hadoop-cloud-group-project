@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>tp-hadoop-22</value> <!-- adresse ResourceManager -->
+    </property>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value> <!-- service shuffle Node Manager (by default, mais explicité) -->
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>3584</value> <!-- RAM max pour Node Manager (free -m) / Garder 500Mo (question de laisser) -->
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.cpu-vcores</name>
+        <value>4</value> <!-- nb CPU dispo pour Node Manager (nproc) -->
+    </property>
+</configuration>

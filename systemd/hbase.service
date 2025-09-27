@@ -1,0 +1,14 @@
+[Unit]
+Description=HBase (Master + RegionServer)
+After=network.target zookeeper.service
+
+[Service]
+User=ubuntu
+Group=ubuntu
+Type=forking
+ExecStart=/opt/hbase/bin/start-hbase.sh
+ExecStop=/opt/hbase/bin/stop-hbase.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
