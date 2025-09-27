@@ -1,6 +1,6 @@
 # Hadoop Cloud Group Project - Télécom Paris
 
-<img src="./elephant-hadoop.jpg" alt="WAIT WHAT? YOU DON'T KNOW HADOOP?" width="300"/>
+<center><img src="./elephant-hadoop.jpg" alt="WAIT WHAT? YOU DON'T KNOW HADOOP?" width="500"/></center>
 
 Bienvenue dans notre projet Hadoop distribué 😎 !
 
