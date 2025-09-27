@@ -1,14 +1,16 @@
 # Hadoop Cloud Group Project - Télécom Paris
 
-<center><img src="./elephant-hadoop.jpg" alt="WAIT WHAT? YOU DON'T KNOW HADOOP?" width="500"/></center>
+<p align="center">
+  <img src="./elephant-hadoop.jpg" alt="WAIT WHAT? YOU DON'T KNOW HADOOP?" width="500"/>
+</p>
 
 Bienvenue dans notre projet Hadoop distribué 😎 !
 
 ## Participants
-Yassine MERNISSI ARIFI
-Julien LAFRANCE
-Omar FEKIH-HASSEN
-Alexandre DONNAT
+Yassine MERNISSI ARIFI <br/>
+Julien LAFRANCE <br/>
+Omar FEKIH-HASSEN <br/>
+Alexandre DONNAT <br/>
 
 ## 🗂️ Structure du projet
 
