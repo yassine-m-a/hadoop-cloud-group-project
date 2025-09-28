@@ -29,6 +29,7 @@ HADOOP-CLOUD-GROUP-PROJECT/
 ├── systemd/                 # Fichiers .service pour démarrage auto
 │   ├── hadoop.service       # Déployé sur le Master Node (22)
 │   ├── hbase-master.service # Déployé sur le HManager (22) active, et le HManager standby (9)
+│   ├── hbase-regionserver.service # Déployé sur les HRegionServer
 │   └── zookeeper.service    # Déployé sur toutes les machines
 │
 └── README.md              # Ce fichier
