@@ -5,5 +5,5 @@ for line in sys.stdin:
     line = line.strip()
     words = line.split()
     for word in words:
-        if word == "France":
+        if word == "Télécom":
             print(f"{word}\t1")
