@@ -15,4 +15,8 @@
         <name>yarn.nodemanager.resource.cpu-vcores</name>
         <value>4</value> <!-- nb CPU dispo pour Node Manager (nproc) -->
     </property>
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>true</value> <!-- Avoir les logs = preuve de job en // -->
+    </property>    
 </configuration>

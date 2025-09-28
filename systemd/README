@@ -1,20 +1,39 @@
 # START SERVICES
+✅ tp-hadoop-22 (NameNode, Resource Manager, HMaster (standby), HRegionServer, QuorumPeerMain)
+sudo systemctl start hadoop hba@se-master hbase-regionserver zookeeper
+N-B: Le service Hadoop lance automatiquement par ssh les DataNodes / NodeManagers dans les autres machines.
 
-✅ tp-hadoop-22 (Master)
-sudo systemctl start hadoop
-sudo systemctl start hbase-master
-sudo systemctl start hbase-regionserver
-sudo systemctl start zookeeper
+✅ tp-hadoop-9 (HMaster (standby), HRegionServer, QuorumPeerMain)
+sudo systemctl start hbase-master hbase-regionserver zookeeper
 
-✅ tp-hadoop-9 (Second HMaster + RegionServer)
-sudo systemctl start hbase-master
-sudo systemctl start hbase-regionserver
-sudo systemctl start zookeeper
+✅ tp-hadoop-30 (HRegionServer, QuorumPeerMain)
+sudo systemctl start hbase-regionserver zookeeper
 
-✅ tp-hadoop-30 (RegionServer)
-sudo systemctl start hbase-regionserver
-sudo systemctl start zookeeper
+✅ tp-hadoop-31 (HRegionServer, QuorumPeerMain)
+sudo systemctl start hbase-regionserver zookeeper
 
-✅ tp-hadoop-31 (RegionServer)
-sudo systemctl start hbase-regionserver
-sudo systemctl start zookeeper
+# CHECK SERVICES (ou jps pour avoir une vision complète)
+✅ tp-hadoop-22 (NameNode, Resource Manager, HMaster (standby), HRegionServer, QuorumPeerMain)
+sudo systemctl status hadoop hba@se-master hbase-regionserver zookeeper
+
+✅ tp-hadoop-9 (HMaster (standby), HRegionServer, QuorumPeerMain)
+sudo systemctl status hbase-master hbase-regionserver zookeeper
+
+✅ tp-hadoop-30 (HRegionServer, QuorumPeerMain)
+sudo systemctl status hbase-regionserver zookeeper
+
+✅ tp-hadoop-31 (HRegionServer, QuorumPeerMain)
+sudo systemctl status hbase-regionserver zookeeper
+
+# STOP SERVICES
+✅ tp-hadoop-22 (NameNode, Resource Manager, HMaster (standby), HRegionServer, QuorumPeerMain)
+sudo systemctl stop hadoop hba@se-master hbase-regionserver zookeeper
+
+✅ tp-hadoop-9 (HMaster (standby), HRegionServer, QuorumPeerMain)
+sudo systemctl stop hbase-master hbase-regionserver zookeeper
+
+✅ tp-hadoop-30 (HRegionServer, QuorumPeerMain)
+sudo systemctl stop hbase-regionserver zookeeper
+
+✅ tp-hadoop-31 (HRegionServer, QuorumPeerMain)
+sudo systemctl stop hbase-regionserver zookeeper
