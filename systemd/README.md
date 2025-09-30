@@ -1,4 +1,4 @@
-# START SERVICES
+## START SERVICES
 ✅ tp-hadoop-22 (NameNode, Resource Manager, HMaster (standby), HRegionServer, QuorumPeerMain)
 sudo systemctl start hadoop hba@se-master hbase-regionserver zookeeper
 N-B: Le service Hadoop lance automatiquement par ssh les DataNodes / NodeManagers dans les autres machines.
@@ -12,7 +12,7 @@ sudo systemctl start hbase-regionserver zookeeper
 ✅ tp-hadoop-31 (HRegionServer, QuorumPeerMain)
 sudo systemctl start hbase-regionserver zookeeper
 
-# CHECK SERVICES (ou jps pour avoir une vision complète)
+## CHECK SERVICES (ou jps pour avoir une vision complète)
 ✅ tp-hadoop-22 (NameNode, Resource Manager, HMaster (standby), HRegionServer, QuorumPeerMain)
 sudo systemctl status hadoop hba@se-master hbase-regionserver zookeeper
 
@@ -25,7 +25,7 @@ sudo systemctl status hbase-regionserver zookeeper
 ✅ tp-hadoop-31 (HRegionServer, QuorumPeerMain)
 sudo systemctl status hbase-regionserver zookeeper
 
-# STOP SERVICES
+## STOP SERVICES
 ✅ tp-hadoop-22 (NameNode, Resource Manager, HMaster (standby), HRegionServer, QuorumPeerMain)
 sudo systemctl stop hadoop hba@se-master hbase-regionserver zookeeper
 
