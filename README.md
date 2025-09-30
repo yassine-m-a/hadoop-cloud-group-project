@@ -1,4 +1,4 @@
-# Hadoop Cloud Group Project - Télécom Paris
+# Hadoop From Scratch Project - Télécom Paris
 
 <p align="center">
   <img src="./elephant-hadoop.jpg" alt="WAIT WHAT? YOU DON'T KNOW HADOOP?" width="500"/>
